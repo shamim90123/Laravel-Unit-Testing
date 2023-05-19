@@ -32,8 +32,8 @@ RUN composer install --no-interaction --optimize-autoloader
 # Set Laravel application key
 RUN php artisan key:generate
 
-# Expose port 80
-EXPOSE 80
+# Expose port 8080
+EXPOSE 8080
 
 # Start Apache
 CMD ["apache2-foreground"]
